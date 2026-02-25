@@ -1,0 +1,406 @@
+.hero-page-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    /* change this */
+    min-height: 100vh;
+    /* better than 80vh */
+    padding: 40px;
+}
+
+.hero-title {
+    font-size: 3.5rem;
+    color: #6D5132;
+    margin-top: 50px;
+    /* Pushes the title down from the top border */
+    margin-bottom: 20px;
+    /* Creates the gap between title and info */
+    text-align: center;
+}
+
+.hero-detail-image {
+    width: 300px;
+    border: 4px solid #3d2b1f;
+    border-radius: 8px;
+    position: relative;
+}
+
+.hero-paragraph {
+    font-size: 1.5rem;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.hero-fate {
+    font-size: 1.5rem;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.return-button {
+    font-family: "greekFreak";
+    padding: 10px 20px;
+    background-color: #987A58;
+    color: #FFECCF;
+    border: 2px solid #574026;
+    cursor: pointer;
+    width: 12vw;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    position: absolute;
+    position: absolute;
+    bottom: 5vh;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.return-button:hover {
+    transition: 0.3s;
+    background-color: #574026;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.button {
+    font-family: "greekFreak";
+    padding: 10px 20px;
+    background-color: #987A58;
+    color: #FFECCF;
+    border: 2px solid #574026;
+    cursor: pointer;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    font-size: 2rem;
+    width: 5vw;
+}
+
+.button:hover {
+    transition: 0.3s;
+    background-color: #574026;
+
+}
+
+.next-button,
+.back-button {
+    position: absolute;
+    top: 50%;
+    /* Centers them vertically on the page */
+    z-index: 10;
+}
+
+.next-button {
+    right: 5%;
+}
+
+.back-button {
+    left: 5%;
+}
+
+.hero-text-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 500px;
+    width: 100%;
+    text-align: left;
+
+    /* REMOVE THESE LINES COMPLETELY */
+    /* position: relative; */
+    /* top: -10vh; */
+    /* left: 2vw; */
+
+    /* Keep your background and borders for visibility */
+    background-color: rgba(255, 236, 207, 0.4);
+    padding: 30px;
+    border-radius: 15px;
+    border: 2px solid #574026;
+}
+
+.hero-details {
+    display: flex;
+    align-items: center;
+    /* Use center to align image and text box horizontally */
+    justify-content: center;
+    gap: 60px;
+    width: 100%;
+    margin-top: 40px;
+    /* Give space below the title instead of using top offsets */
+}
+
+/* This targets the specific paragraphs inside your box */
+.hero-text-content p,
+.hero-text-content .hero-paragraph,
+.hero-text-content .hero-fate {
+    margin: 0;
+    /* Remove any stray margins pushing them out */
+    padding: 5px 0;
+    /* Use small padding for spacing instead */
+    width: 100%;
+    /* Ensure they don't grow wider than the box */
+    position: static;
+    /* Overrides any 'absolute' or 'relative' drift */
+    transform: none;
+    /* Stops them from 'ghosting' outside the box */
+}
+
+.hero-text-content P {
+    font-size: 2rem;
+}
+
+.info-fade {
+    animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(5px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.nav-controls {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+button:disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+}
+
+.hero-details {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.hero-text-content {
+    /* This prevents the layout from jumping when text changes */
+    min-height: 350px;
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    text-align: left;
+}
+
+.info-fade {
+    /* Takes up all available space, pushing buttons to the bottom */
+    flex-grow: 1;
+    animation: fadeIn 0.4s ease-out;
+}
+
+.nav-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-top: auto;
+    /* Pushes the buttons to the very bottom of the container */
+    padding-top: 20px;
+}
+
+/* Ensure the image doesn't get squished */
+.hero-detail-image {
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hero-text-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* This pushes nav-controls to the bottom */
+    height: 450px;
+    /* Adjust based on your scroll design */
+    padding: 20px;
+}
+
+.story-scroll-area {
+    flex-grow: 1;
+    /* Takes up all space except what buttons need */
+    overflow-y: auto;
+    /* Adds a scrollbar if the story is too long for the box */
+    margin-bottom: 15px;
+    padding-right: 10px;
+}
+
+.nav-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    /* Optional: subtle line above buttons */
+    padding-top: 10px;
+}
+
+/* Make sure buttons don't shrink */
+.button {
+    flex-shrink: 0;
+    padding: 10px 20px;
+}
+
+.hero-text-content {
+    display: flex;
+    flex-direction: column;
+    /* REMOVE: height: 450px; */
+    /* ADD: */
+    min-height: 400px;
+    width: 100%;
+    max-width: 500px;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+.story-scroll-area {
+    /* REMOVE: overflow-y: auto; */
+    /* REMOVE: flex-grow: 1; */
+    width: 100%;
+    margin-bottom: 30px;
+    /* Space between text and buttons */
+}
+
+.hero-paragraph {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    text-align: justify;
+    margin: 0;
+    /* This ensures the text looks like a real book page */
+    font-family: 'Garamond', serif;
+}
+
+.hero-details {
+    display: flex;
+    align-items: flex-start;
+    /* Aligns image to top */
+    justify-content: center;
+    gap: 40px;
+    padding: 20px;
+}
+
+.hero-detail-image {
+    width: 250px;
+    /* Slightly larger for visibility */
+    position: sticky;
+    /* The image stays put while you read */
+    top: 20px;
+    border-radius: 8px;
+}
+
+/* Target the whole scrollbar and set its width */
+::-webkit-scrollbar {
+    width: 12px;
+    /* for vertical scrollbar */
+    height: 12px;
+    /* for horizontal scrollbar */
+}
+
+/* Style the track (background) */
+::-webkit-scrollbar-track {
+    background: #caac7f;
+    border-radius: 5px;
+
+}
+
+/* Style the thumb (draggable handle) */
+::-webkit-scrollbar-thumb {
+    background: #795f42;
+
+    border-radius: 6px;
+    /* Optional: add rounded corners */
+}
+
+/* Add a hover effect to the thumb */
+::-webkit-scrollbar-thumb:hover {
+    background: #574026;
+}
+
+@media (max-width: 768px) {
+  .hero-page-container {
+    padding: 20px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Stack image and text */
+  .hero-details {
+    flex-direction: column; 
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+  }
+
+  /* Make the image look like a card header */
+  .hero-detail-image {
+    width: 80%;
+    max-width: 200px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  }
+
+  /* The text container now acts like the "Card" body */
+  .hero-text-content {
+    width: 90vw; /* Takes up most of the screen width */
+    min-height: 300px; /* Prevents jumping */
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1); /* Optional: slight background to define the "card" area */
+    border-radius: 15px;
+  }
+
+  .hero-title {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  /* Navigation buttons - larger for thumbs */
+  .nav-controls {
+    margin-top: auto;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+  }
+
+  .button {
+    width: 60px;
+    height: 45px;
+    font-size: 1.2rem;
+  }
+}

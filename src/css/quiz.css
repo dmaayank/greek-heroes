@@ -1,0 +1,175 @@
+/* Main Wrapper - No box/background */
+.quiz-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 10vh 20px;
+  min-height: 100vh;
+  text-align: center;
+  font-family: "greekFreak", serif;
+  color: #6D5132;
+}
+
+/* Question - Clean and bold */
+.quiz-question {
+  font-size: 2.8rem;
+  margin: 40px auto;
+  max-width: 900px;
+  line-height: 1.1;
+}
+
+/* Options Wrapper */
+.options-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+  max-width: 450px;
+  margin-bottom: 40px;
+}
+
+/* Individual Option Buttons */
+.option-btn {
+  font-family: "greekFreak";
+  font-size: 1.5rem;
+  padding: 14px;
+  background-color: #987A58;
+  color: #FFECCF;
+  border: 2px solid #574026;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+
+.option-btn:hover {
+  background-color: #6D5132;
+  transform: scale(1.02);
+}
+
+/* Selected State */
+.option-btn.selected {
+  background-color: #574026;
+  color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Navigation Buttons at the bottom */
+.quiz-container .button {
+  font-family: "greekFreak";
+  padding: 10px 25px;
+  font-size: 1.6rem;
+  background-color: #987A58;
+  color: #FFECCF;
+  border: 2px solid #574026;
+  border-radius: 12px;
+  cursor: pointer;
+  margin: 10px;
+}
+
+.quiz-container .button:hover {
+  background-color: #6D5132;
+}
+
+
+.start-quiz-btn {
+  font-family: "greekFreak";
+  padding: 10px 20px;
+  background-color: #987A58;
+  color: #FFECCF;
+  border: 2px solid #574026;
+  cursor: pointer;
+  width: 12vw;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  position: absolute;
+  bottom: 25vh;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.start-quiz-btn:hover {
+  transition: 0.3s;
+  background-color: #574026;
+}
+
+.restart {
+  font-family: "greekFreak";
+  padding: 10px 20px;
+  background-color: #987A58;
+  color: #FFECCF;
+  border: 2px solid #574026;
+  cursor: pointer;
+  width: 12vw;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  position: absolute;
+  bottom: 25vh;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.restart:hover {
+  transition: 0.3s;
+  background-color: #574026;
+}
+
+.return-button {
+  position: absolute;
+  bottom: 20vh;
+}
+
+/* --- Mobile Responsive --- */
+@media (max-width: 768px) {
+  .quiz-container {
+    padding-top: 5vh;
+  }
+
+  .quiz-question {
+    font-size: 1.8rem;
+    width: 10vw;
+  }
+
+}
+
+/* Create a shared class for all your Greek-style buttons */
+.start-quiz-btn, .restart, .quiz-nav-btn {
+font-family: "greekFreak";
+  padding: 12px 24px;
+  background-color: #987A58;
+  color: #FFECCF;
+  border: 2px solid #574026;
+  border-radius: 10px;
+  cursor: pointer;  
+
+  /* Desktop settings */
+  width: auto;
+  min-width: 180px; 
+  font-size: 1.5rem;
+
+  width: 250px; /* Fixed width looks cleaner for stacked buttons */
+  font-size: 1.5rem;
+  transition: 0.3s;
+  
+  /* Centering logic */
+  transition: 0.3s;
+}
+
+.start-quiz-btn:hover, .restart:hover, .quiz-nav-btn:hover .return-button {
+  background-color: #574026;
+  transform: translateX(-50%) scale(1.05); /* Keeps it centered while scaling */
+}
+
+/* --- Mobile Responsive Fix --- */
+@media (max-width: 768px) {
+  .start-quiz-btn, .restart, .quiz-nav-btn {
+    width: 70vw;       /* Much better for mobile thumbs */
+    font-size: 1.2rem;
+    bottom: 10vh;      /* Lift it up a bit on small screens */
+    padding: 15px;
+  }
+}
+
+

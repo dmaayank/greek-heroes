@@ -1,0 +1,181 @@
+/* src/css/App.css */
+@font-face {
+  font-family: "greekFreak"; /* set name */
+  src: url(../assets/fonts/Greek-Freak.ttf); /* url of the font */
+}
+
+.app-container {
+  text-align: center;
+  font-family: "greekFreak";
+}
+
+body {
+  background-image: url(/src/assets/images/background.jpg);
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+h1 {
+  position: relative;
+  top: 20vh;
+  font-size: 4rem;
+  margin-bottom: 20px;
+  font-family: "greekFreak";
+  color: #6D5132;
+}
+
+p {
+  font-size: 3rem;
+  margin: auto;
+  width: 80%;
+  position: relative;
+  top: 25vh;
+  margin-bottom: 30px;
+  color: #6D5132;
+}
+
+.start {
+  cursor: pointer;
+  position: relative;
+  top: 30vh;
+  font-size: 3rem;
+  width: 13vw;
+  height: 7vh;
+  font-family: "greekFreak"; /* set name */
+  color: #FFECCF;
+  background-color: #987A58;
+  border: #574026 solid 3px;
+  border-radius: 20px;
+}
+
+.start:hover {
+  background-color: #6D5132; /* Darker brown on hover */
+  color: white;
+  transition: 0.3s;
+  border: #574026 solid 3px;
+  transform: scale(1.1);
+}
+
+.start:active {
+    transform: scale(0.95);
+}
+
+.main-title{
+  margin: auto;
+  position: relative;
+  transform: translateY(-60%);
+}
+
+.container {
+  text-align: center;
+  font-family: "greekFreak";
+  align-items: center;
+  justify-content: center;
+}
+
+.card-grid {
+  display: grid;
+  margin: auto;
+  transform: translateY(20%);
+  grid-template-columns: repeat(5, 1fr); /* Exactly 5 columns */
+  grid-template-rows: repeat(2, 1fr);    /* Exactly 2 rows */
+  gap: 20px;                             /* Space between cards */
+  width: 80%;
+  margin-top: 10vh;                      /* Pushes grid down below "Our Heroes" */
+}
+
+.hero-card.visited {
+  filter: grayscale(100%);
+  opacity: 0.7; /* Optional: makes them look a bit "faded" too */
+  transition: filter 0.5s ease;
+}
+
+.hero-card.visited:hover .card-image {
+  filter: grayscale(0%);
+  opacity: 1;
+}
+
+.to-quiz {
+    font-family: "greekFreak";
+    padding: 10px 20px;
+    background-color: #987A58;
+    color: #FFECCF;
+    border: 2px solid #574026;
+    cursor: pointer;
+    width: 12vw;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    margin-top: 40px;
+    position: absolute;
+    bottom: 5vh;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.to-quiz:hover {
+    transition: 0.3s;
+    background-color: #574026;
+}
+
+@media (max-width: 768px) {
+  /* 1. Reset the app container to allow natural scrolling */
+  .app-container {
+    display: block; /* Allow cards to stack and scroll down */
+    width: 100%;
+    padding: 10px 0;
+    overflow-x: hidden;
+  }
+
+  /* 2. Fix the Titles and Text */
+  h1 {
+    font-size: 2.5rem;
+    top: 5vh; /* Bring it up from the 20vh desktop setting */
+    margin-bottom: 10px;
+  }
+
+  p {
+    font-size: 1.2rem;
+    top: 5vh;
+    width: 90%;
+    margin-bottom: 20px;
+  }
+
+  /* 3. The Grid: Force single card layout */
+  .card-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px; /* Space between the stacked cards */
+    width: 100%;
+    margin: 0 auto;
+    transform: translateY(10vh); /* Adjust positioning for mobile */
+    padding-bottom: 100px; /* Space for the bottom quiz button */
+  }
+
+  /* 4. The Individual Cards */
+  .hero-card {
+    width: 85vw;    /* One card takes up most of the screen width */
+    max-width: 300px;
+    height: auto;   /* Let the card height be determined by content */
+    margin: 0 auto;
+  }
+
+  /* 5. Adjust the Quiz Button */
+  .to-quiz {
+    width: 60vw;
+    font-size: 1.2rem;
+    position: fixed; /* Keep it visible at the bottom of the screen */
+    bottom: 20px;
+    z-index: 100;
+  }
+
+  /* 6. Fix Start Button for mobile intro */
+  .start {
+    width: 50vw;
+    font-size: 1.5rem;
+    top: 10vh;
+  }
+}

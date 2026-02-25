@@ -1,0 +1,124 @@
+{
+  "greekHeroes": [
+    {
+      "name": "achilles",
+      "greekName": "Ἀχιλλεύς",
+      "origin": "Phthia",
+      "parents": { "father": "Peleus", "mother": "Thetis" },
+      "specialAbilities": ["Near invulnerability", "Greatest warrior"],
+      "notableMyths": ["Trojan War", "Duel with Hector"],
+      "fate": "Killed by Paris with an arrow to the heel.",
+      "storyTitle": "The Wrath of Achilles",
+      "storyPart1": "Achilles was the greatest of all Greek warriors, but his life was defined by a prophecy: he could live a long, quiet life of obscurity, or a short, glorious life that would never be forgotten. He chose glory. When the Trojan War began, he led his Myrmidons with terrifying efficiency, becoming the Greeks' greatest weapon against the high walls of Troy. However, his pride was as great as his skill. After a bitter feud with King Agamemnon over a captive woman named Briseis, Achilles withdrew from battle in a fit of rage.",
+      "storyPart2": "His absence nearly led to the Greeks' defeat. It was only the death of his beloved companion, Patroclus, at the hands of the Trojan prince Hector, that brought him back to the field. Consumed by grief and fury, Achilles chased Hector around the city walls and slew him in single combat. Yet, even the greatest warrior had a weakness. In the end, he was struck by a poisoned arrow fired by Paris and guided by the god Apollo. The arrow hit his only vulnerable spot—his heel—bringing the legend of the 'swift-footed' hero to a tragic close."
+    },
+    {
+      "name": "heracles",
+      "greekName": "Ἡρακλῆς",
+      "origin": "Thebes",
+      "parents": { "father": "Zeus", "mother": "Alcmene" },
+      "specialAbilities": ["Superhuman strength", "Extreme endurance"],
+      "notableMyths": ["The Twelve Labors", "Cerberus"],
+      "fate": "Ascended to Olympus and became immortal.",
+      "storyTitle": "The Twelve Labors",
+      "storyPart1": "Heracles was born the son of Zeus, but his life was a constant struggle against the vengeful goddess Hera. In a fit of madness induced by Hera, Heracles committed a terrible crime against his own family. To purify his soul, he was commanded by the Oracle of Delphi to serve his cousin, King Eurystheus, who feared Heracles' strength and sought to destroy him by assigning him twelve 'impossible' labors.",
+      "storyPart2": "The labors took Heracles to the edges of the known world. He wrestled the Nemean Lion whose skin was impervious to weapons, outsmarted the many-headed Hydra, and even traveled to the Underworld to kidnap Cerberus. Each task required not just his legendary muscle, but also his wit. After a lifetime of suffering and heroism, Heracles died in agony due to a poisoned robe, but his divine blood prevailed. He was brought to Mount Olympus, where he was granted immortality."
+    },
+    {
+      "name": "perseus",
+      "greekName": "Περσεύς",
+      "origin": "Argos",
+      "parents": { "father": "Zeus", "mother": "Danaë" },
+      "specialAbilities": ["Divine weaponry", "Bravery"],
+      "notableMyths": ["Slaying Medusa", "Saving Andromeda"],
+      "fate": "Founded Mycenae and ruled as king.",
+      "storyTitle": "The Gorgon's Head",
+      "storyPart1": "Perseus was sent on a deadly mission by King Polydectes: he was to fetch the head of Medusa, a Gorgon whose gaze turned men to stone. Knowing no mortal could do this alone, the gods aided him. Hermes gave him winged sandals, and Athena provided a polished bronze shield. He used the shield's reflection to look at Medusa safely, decapitating her while she slept and tucking the head into a magical bag.",
+      "storyPart2": "On his flight home, Perseus spotted the princess Andromeda chained to a rock as a sacrifice to a sea monster. Using the winged sandals to strike from above and Medusa’s head to petrify the beast, he saved her and took her as his bride. He eventually fulfilled a prophecy by accidentally killing his grandfather with a stray discus during an athletic competition, proving that even heroes cannot escape the threads of Fate."
+    },
+    {
+      "name": "orpheus",
+      "greekName": "Ὀρφεύς",
+      "origin": "Thrace",
+      "parents": { "father": "Apollo", "mother": "Calliope" },
+      "specialAbilities": ["Divine musicianship", "Animal charming"],
+      "notableMyths": ["Underworld Journey", "Argonaut Expedition"],
+      "fate": "Torn apart by Maenads after a life of mourning.",
+      "storyTitle": "The Song of the Underworld",
+      "storyPart1": "Orpheus was the greatest musician to ever live; his music could move stones and soothe the most savage beasts. When his wife, Eurydice, died from a snake bite on their wedding day, Orpheus was so heartbroken that he did what no living mortal dared: he descended into the Underworld. Using his lyre, he charmed the ferryman Charon and the three-headed dog Cerberus, eventually reaching the throne of Hades and Persephone.",
+      "storyPart2": "His music was so beautiful it brought tears to the eyes of the gods of the dead. They agreed to let Eurydice return to the surface on one condition: Orpheus must walk ahead of her and never look back until they reached the sunlight. He almost made it, but at the very last moment, overcome by doubt and longing, he turned around. He saw Eurydice's spirit for one fleeting second before she was pulled back into the darkness forever."
+    },
+    {
+      "name": "theseus",
+      "greekName": "Θησεύς",
+      "origin": "Athens",
+      "parents": { "father": "Aegeus", "mother": "Aethra" },
+      "specialAbilities": ["Strategic thinking", "Wrestling"],
+      "notableMyths": ["The Minotaur", "The Labyrinth"],
+      "fate": "Died in exile after falling from a cliff.",
+      "storyTitle": "The Minotaur and the Labyrinth",
+      "storyPart1": "Theseus traveled to Athens to claim his birthright as the son of King Aegeus. Along the way, he cleared the road of six legendary bandits, proving his strength. When he reached Athens, he discovered the city was forced to send fourteen youths every nine years to be devoured by the Minotaur in Crete. Determined to end this cruelty, Theseus volunteered as one of the victims, vowing to slay the beast.",
+      "storyPart2": "In Crete, the princess Ariadne fell in love with him. She gave him a ball of golden thread to ensure he could find his way back. Theseus navigated the dark corridors, found the Minotaur, and defeated it with his bare hands. However, the journey home was bitter; he forgot to change his ship’s black sails to white, leading his father to believe he was dead and leap into the sea in despair."
+    },
+    {
+      "name": "atalanta",
+      "greekName": "Ἀταλάντη",
+      "origin": "Arcadia",
+      "parents": { "father": "Iasus", "mother": "Clymene" },
+      "specialAbilities": ["Incredible speed", "Archery"],
+      "notableMyths": ["Calydonian Boar Hunt", "The Golden Apples"],
+      "fate": "Transformed into a lion by the gods.",
+      "storyTitle": "The Great Huntress",
+      "storyPart1": "Abandoned on a mountainside as a baby, Atalanta was raised by a she-bear and later discovered by hunters. She grew into a fierce warrior and the swiftest runner in Greece. She famously drew first blood during the Calydonian Boar Hunt, earning the respect of many heroes. When her father finally recognized her, he insisted she marry, but she declared she would only wed the man who could beat her in a footrace.",
+      "storyPart2": "Hippomenes prayed to Aphrodite for help. The goddess gave him three golden apples. During the race, whenever Atalanta was about to pass him, he dropped an apple. Mesmerized by their beauty, Atalanta stopped to pick them up, allowing Hippomenes to win the race and her heart. Unfortunately, their lack of gratitude to the gods eventually led to them being turned into lions."
+    },
+    {
+      "name": "odysseus",
+      "greekName": "Ὀδυσσεύς",
+      "origin": "Ithaca",
+      "parents": { "father": "Laertes", "mother": "Anticleia" },
+      "specialAbilities": ["Master tactician", "Expert archer"],
+      "notableMyths": ["The Trojan Horse", "The Cyclops"],
+      "fate": "Returned home and reclaimed his kingdom.",
+      "storyTitle": "The Long Journey Home",
+      "storyPart1": "Odysseus was not the strongest hero, but he was undoubtedly the cleverest. During the ten-year siege of Troy, it was his 'Trojan Horse' strategy that finally broke the stalemate and led to the city's fall. But his true trial began after the war ended. His journey home to Ithaca, which should have taken weeks, lasted ten grueling years as he faced the wrath of Poseidon and the temptations of the sea.",
+      "storyPart2": "He survived the cave of the Cyclops Polyphemus, escaped the sirens, and endured the terrors of Scylla and Charybdis. While his men fell to greed or bad luck, Odysseus survived by his wits alone. He returned to Ithaca disguised as a beggar, only to find his palace overrun by greedy suitors. In a final display of skill, he strung his mighty bow, reclaimed his throne, and proved that a sharp mind is the most powerful weapon of all."
+    },
+    {
+      "name": "jason",
+      "greekName": "Ἰάσων",
+      "origin": "Iolcus",
+      "parents": { "father": "Aeson", "mother": "Alcimede" },
+      "specialAbilities": ["Charismatic leadership", "Expert sailor"],
+      "notableMyths": ["The Argonauts", "The Golden Fleece"],
+      "fate": "Died in old age when the prow of the Argo fell on him.",
+      "storyTitle": "The Quest for the Golden Fleece",
+      "storyPart1": "Jason was sent on a mission by his uncle Pelias to retrieve the Golden Fleece from the distant land of Colchis. He assembled the 'Argonauts,' a crew of Greece’s greatest heroes, and built the magical ship Argo. Their voyage was filled with peril, from clashing rocks to terrifying Harpies. When they finally reached Colchis, King Aeëtes set even more impossible tasks for Jason before he would hand over the fleece.",
+      "storyPart2": "Jason succeeded only because the sorceress Medea fell in love with him. She gave him magical help to protect him from fire-breathing bulls and taught him how to put the dragon guardian to sleep. Jason returned home a hero, but his later betrayal of Medea led to a tragic downfall. He spent his final years as a lonely wanderer, eventually dying when a rotting piece of his once-great ship fell and struck him."
+    },
+    {
+      "name": "hector",
+      "greekName": "Ἕκτωρ",
+      "origin": "Troy",
+      "parents": { "father": "Priam", "mother": "Hecuba" },
+      "specialAbilities": ["Unrivaled courage", "Master of the spear"],
+      "notableMyths": ["The Siege of Troy", "Death of Patroclus"],
+      "fate": "Slain by Achilles outside the gates of Troy.",
+      "storyTitle": "The Tamer of Horses",
+      "storyPart1": "Hector was the crown prince of Troy and its greatest defender. Unlike many heroes who fought for personal glory, Hector fought for his family and his city. For ten years, he held back the entire Greek army, often challenging their best warriors to single combat. He was a noble leader who treated his enemies with respect, but he knew that as long as Achilles was on the battlefield, the fate of Troy was uncertain.",
+      "storyPart2": "The turning point came when Hector slew Patroclus, thinking he was Achilles. This mistake unleashed the true wrath of Achilles. Hector faced the demi-god alone outside the gates of Troy, knowing his death was certain. He fought with the courage of a lion, but was ultimately slain. His death broke the spirit of Troy, and he is remembered not just as a warrior, but as the soul of his nation."
+    },
+    {
+      "name": "bellerophon",
+      "greekName": "Βελλεροφῶν",
+      "origin": "Corinth",
+      "parents": { "father": "Poseidon", "mother": "Eurynome" },
+      "specialAbilities": ["Pegasus taming", "Monster slaying"],
+      "notableMyths": ["The Chimera", "Taming Pegasus"],
+      "fate": "Fell from the sky and lived his life in blindness.",
+      "storyTitle": "The Rider of the Skies",
+      "storyPart1": "Bellerophon’s greatest achievement was taming the winged horse, Pegasus. With the help of a golden bridle given to him by Athena, he captured the wild stallion at a sacred spring. Together, they were unstoppable. King Iobates sent him to kill the Chimera—a monstrous creature with the heads of a lion and a goat, and a snake for a tail. Bellerophon flew high above its reach and killed it with a lead-tipped spear.",
+      "storyPart2": "Success, however, bred dangerous pride. Believing he was worthy of a seat among the gods, Bellerophon tried to fly Pegasus to the peak of Mount Olympus. Angered by this hubris, Zeus sent a gadfly to sting Pegasus. The horse reared, throwing Bellerophon back to the earth. He survived the fall but was blinded and crippled, spending the rest of his days wandering the world in shame, a reminder that even the highest fliers can fall."
+    }
+  ]
+}

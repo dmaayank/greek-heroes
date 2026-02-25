@@ -1,0 +1,34 @@
+@font-face {
+  font-family: "greekFreak"; /* set name */
+  src: url(../assets/fonts/Greek-Freak.ttf); /* url of the font */
+}
+
+.card-container {
+  width: 200px;
+  height: 280px;
+  perspective: 1000px;
+  cursor: pointer;
+  font-family: "greekFreak";
+  border-radius: 20px;
+  border: #574026 solid 3px;
+  box-shadow: #251b0e 3px 3px 20px 2px;
+  text-align: center;
+  color: #FFEAA6;
+  font-size: 2rem;
+  text-shadow: #251b0e 3px 3px 3px;
+
+}
+
+.name {
+  position: relative;
+  letter-spacing: 3px;
+  top: 18vh;
+}
+
+.card-container:hover {
+  transform: translateY(-2px);
+}
+
+.card-container:active {
+    transform: scale(0.95);
+}
