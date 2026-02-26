@@ -380,3 +380,28 @@ p {
   }
 
 }
+
+@media (max-width: 768px) {
+
+  .card-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+
+    gap: 20px;
+
+    width: 100%;
+    max-width: 320px;   /* narrower than screen */
+    
+    margin-left: auto;  /* THIS centers */
+    margin-right: auto; /* THIS centers */
+
+    padding: 0;
+  }
+
+  .hero-card,
+  .card-container {
+    width: 100%;
+    aspect-ratio: 3 / 4;
+  }
+
+}
