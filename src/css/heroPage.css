@@ -38,24 +38,6 @@
     text-align: justify;
 }
 
-.return-button {
-    font-family: "greekFreak";
-    padding: 10px 20px;
-    background-color: #987A58;
-    color: #FFECCF;
-    border: 2px solid #574026;
-    cursor: pointer;
-    width: 12vw;
-    font-size: 1.5rem;
-    margin-bottom: 20px;
-    border-radius: 10px;
-    position: absolute;
-    position: absolute;
-    bottom: 5vh;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
 .return-button:hover {
     transition: 0.3s;
     background-color: #574026;
@@ -403,4 +385,70 @@ button:disabled {
     height: 45px;
     font-size: 1.2rem;
   }
+}
+
+/* Laptops / small desktops */
+@media (max-width: 1024px) {
+  .hero-page-container {
+    padding: 24px;
+  }
+
+  .hero-title {
+    font-size: 2.6rem;
+    margin-top: 30px;
+  }
+
+  .hero-details {
+    gap: 30px;
+    padding: 10px;
+  }
+
+  .hero-detail-image {
+    width: 240px;
+    height: 340px;
+  }
+
+  .hero-text-content {
+    max-width: 520px;
+    padding: 24px;
+    min-height: 360px;
+  }
+
+  .hero-paragraph,
+  .hero-fate {
+    font-size: 1.15rem;
+  }
+
+  .button {
+    width: 70px;
+    font-size: 1.4rem;
+  }
+
+  .return-button {
+    width: 180px; /* don't use vw on laptop buttons */
+    font-size: 1.2rem;
+    position: relative;
+  }
+}
+
+.return-button {
+  position: static !important;     /* kills absolute/relative positioning */
+  transform: none !important;
+  left: auto !important;
+  bottom: auto !important;
+  top: auto !important;
+
+  display: inline-block;
+  align-self: flex-start;          /* top-left inside the flex column */
+  margin: 0 auto;
+
+  font-family: "greekFreak";
+  padding: 10px 20px;
+  background-color: #987A58;
+  color: #FFECCF;
+  border: 2px solid #574026;
+  cursor: pointer;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  width: auto !important;          /* prevents vw sizing */
 }

@@ -17,9 +17,6 @@ const HeroPage = ({ hero, onBack }) => {
 
     return (
         <div className="hero-page-container">
-            {step === 2 && (
-                <button className="return-button" onClick={onBack}>BACK TO HEROES</button>
-            )}
 
             <h2 className="hero-title">{hero.name}</h2>
             {/* <h3 >{hero.storyTitle}</h3> */}
@@ -27,7 +24,7 @@ const HeroPage = ({ hero, onBack }) => {
 
             <div className="hero-details">
                 <img
-                    src={`src/assets/images/${hero.name}.jpg`}
+                    src={`${import.meta.env.BASE_URL}images/${hero.name.toLowerCase()}.jpg`}
                     alt={hero.name}
                     className="hero-detail-image"
                 />
@@ -54,6 +51,9 @@ const HeroPage = ({ hero, onBack }) => {
                         <button className="button" onClick={nextStep} disabled={step === 2}>{">>"}</button>
                     </div>
                 </div>            </div>
+                        {step === 2 && (
+                            <button className="return-button" onClick={onBack}>BACK TO HEROES</button>
+                        )}
         </div>
     );
 };

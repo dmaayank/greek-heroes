@@ -5,7 +5,8 @@ const Card = ({ name }) => {
 
   const [isFlipped, setIsFlipped] = useState(false);
   const [toShowPage, setToShowPage] = useState(false)
-  const imageUrl = new URL(`../assets/images/${name}.jpg`, import.meta.url).href;
+  const imageUrl = `${import.meta.env.BASE_URL}images/${name.toLowerCase()}.jpg`;
+
 
   const myStyle = {
     backgroundImage: `url(${imageUrl})`,
