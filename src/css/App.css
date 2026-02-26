@@ -369,6 +369,28 @@ p {
   }
 }
 
+@media (max-width: 768px) {
+  .card-grid {
+    display: grid;
+
+    grid-template-columns: 1fr;   /* ONE card */
+    gap: 20px;
+
+    width: 100%;
+    max-width: 380px;
+    margin: 20px auto;
+
+    transform: none;              /* 🔥 REMOVE desktop translate */
+  }
+
+  .hero-card,
+  .card-container {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 3 / 4;
+  }
+}
+
 /* Phones */
 @media (max-width: 480px) {
   .card-grid {
