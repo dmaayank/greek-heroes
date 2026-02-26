@@ -317,20 +317,62 @@ p {
   max-width: 1200px;
   margin-top: 2rem;
 }
-
-/* 6. Mobile Responsiveness */
+/* Mobile + tablet */
 @media (max-width: 768px) {
   .card-grid {
-    grid-template-columns: repeat(2, 1fr); /* 2 columns on tablets */
+    display: grid;
+    grid-template-columns: repeat(2, minmax(140px, 1fr)); /* 2 nice columns */
+    gap: 14px;
+
+    width: 100%;
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 16px;
+
+    transform: none;     /* IMPORTANT: kill desktop translate */
+    margin-top: 16px;    /* IMPORTANT: kill big vh spacing */
   }
 
-  .app-container {
-    gap: 1.5rem;
+  /* If your cards have a class like .hero-card or .card-container */
+  .hero-card,
+  .card-container {
+    width: 100%;
+    aspect-ratio: 3 / 4;  /* keeps them consistent */
+    height: auto;
+  }
+
+  /* Make the title not gigantic */
+  h1 {
+    top: auto;
+    position: static;
+    margin: 16px 0 8px;
+    font-size: 2rem;
+  }
+
+  p {
+    top: auto;
+    position: static;
+    width: 92%;
+    font-size: 1.1rem;
+    margin: 0 auto 12px;
+  }
+
+  /* Bottom button should not use vw */
+  .to-quiz {
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 16px;
+    width: min(320px, 90vw);
+    font-size: 1.1rem;
+    z-index: 1000;
   }
 }
 
+/* Phones */
 @media (max-width: 480px) {
   .card-grid {
     grid-template-columns: 1fr; /* 1 column on phones */
+    max-width: 380px;
   }
 }
