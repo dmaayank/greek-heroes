@@ -75,16 +75,6 @@ p {
   justify-content: center;
 }
 
-.card-grid {
-  display: grid;
-  margin: auto;
-  transform: translateY(20%);
-  grid-template-columns: repeat(5, 1fr); /* Exactly 5 columns */
-  grid-template-rows: repeat(2, 1fr);    /* Exactly 2 rows */
-  gap: 20px;                             /* Space between cards */
-  width: 80%;
-  margin-top: 10vh;                      /* Pushes grid down below "Our Heroes" */
-}
 
 .hero-card.visited {
   filter: grayscale(100%);
@@ -144,16 +134,6 @@ p {
   }
 
   /* 3. The Grid: Force single card layout */
-  .card-grid {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 30px; /* Space between the stacked cards */
-    width: 100%;
-    margin: 0 auto;
-    transform: translateY(10vh); /* Adjust positioning for mobile */
-    padding-bottom: 100px; /* Space for the bottom quiz button */
-  }
 
   /* 4. The Individual Cards */
   .hero-card {
@@ -309,14 +289,17 @@ p {
 }
 
 /* 5. Grid Layout (For the Hero Selection Screen) */
+
 .card-grid {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   gap: 20px;
   width: 90%;
   max-width: 1200px;
-  margin-top: 2rem;
+  margin: 2rem auto 0;
+  transform: none;         /* ✅ remove translateY */
 }
+
 /* Mobile + tablet */
 @media (max-width: 768px) {
   .card-grid {
