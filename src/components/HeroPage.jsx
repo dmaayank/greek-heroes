@@ -3,9 +3,18 @@ import '../css/heroPage.css';
 
 const HeroPage = ({ hero, onBack }) => {
     const [step, setStep] = useState(0);
-    
+
     // We create the audio object here
     const audioRef = useRef(new Audio(`${import.meta.env.BASE_URL}audio/${hero.name.toLowerCase()}.mp3`));
+
+    const [isMuted, setIsMuted] = useState(false);
+
+    const toggleMute = () => {
+        setIsMuted(!isMuted);
+        audioRef.current.muted = !isMuted;
+        // If it was blocked, this click will "unblock" it
+        audioRef.current.play();
+    };
 
     useEffect(() => {
         const audio = audioRef.current;
@@ -27,7 +36,7 @@ const HeroPage = ({ hero, onBack }) => {
 
         // 4. Add the "time listener"
         audio.addEventListener("timeupdate", handleTimeUpdate);
-        
+
         audio.play().catch(e => console.log("User interaction needed for audio"));
 
         // 5. Cleanup: Stop music and remove the listener when leaving the page
@@ -47,6 +56,10 @@ const HeroPage = ({ hero, onBack }) => {
             {step === 2 && (
                 <button className="return-button" onClick={onBack}>BACK TO HEROES</button>
             )}
+
+            <button className="audio-control-btn" onClick={toggleMute}>
+                {isMuted ? "🔈 Unmute" : "🔊 Mute"}
+            </button>
 
             <h2 className="hero-title">{hero.name}</h2>
 
