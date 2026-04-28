@@ -366,12 +366,15 @@ button:disabled {
 }
 
 @media (max-width: 768px) {
+
   .hero-page-container {
     padding: 20px 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 100vh;
   }
+
 
   /* Stack image and text */
   .hero-details {
@@ -379,6 +382,7 @@ button:disabled {
     align-items: center;
     gap: 15px;
     width: 100%;
+    margin-top: 0;
   }
 
   /* Make the image look like a card header */
@@ -393,15 +397,22 @@ button:disabled {
   /* The text container now acts like the "Card" body */
   .hero-text-content {
     width: 90vw; /* Takes up most of the screen width */
+    height: 35vh;
     min-height: 300px; /* Prevents jumping */
     padding: 20px;
     background: rgba(255, 255, 255, 0.1); /* Optional: slight background to define the "card" area */
     border-radius: 15px;
   }
 
+    .hero-text-content P{
+        font-size: 1.4rem;
+    }
+
+
   .hero-title {
     font-size: 1.5rem;
     text-align: center;
+    margin-top: 3vh;
   }
 
   /* Navigation buttons - larger for thumbs */
@@ -418,4 +429,47 @@ button:disabled {
     height: 45px;
     font-size: 1.2rem;
   }
+
+  .audio-control-btn {
+    font-family: "greekFreak";
+    padding: 10px 20px;
+    background-color: #987A58;
+    color: #FFECCF;
+    border: 2px solid #574026;
+    cursor: pointer;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    font-size: 1rem;
+    width: 5vw;
+    position: relative;
+    top: 3vh;
+}
+
+.return-button {
+    font-family: "greekFreak";
+    padding: 10px 20px;
+    background-color: #987A58;
+    color: #FFECCF;
+    border: 2px solid #574026;
+    cursor: pointer;
+    width: 30vw;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    position: absolute;
+    position: absolute;
+    bottom: 2vh;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.story-scroll-area {
+    flex-grow: 1;
+    /* Takes up all space except what buttons need */
+    overflow-y: auto;
+    /* Adds a scrollbar if the story is too long for the box */
+    padding-right: 10px;
+}
+
+  
 }
