@@ -461,6 +461,7 @@ button:disabled {
     bottom: 2vh;
     left: 50%;
     transform: translateX(-50%);
+    z-index: 2;
 }
 
 .story-scroll-area {
