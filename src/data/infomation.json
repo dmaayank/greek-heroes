@@ -3,10 +3,21 @@
     {
       "name": "achilles",
       "greekName": "Ἀχιλλεύς",
+      "startTime": 7,
+      "endTime": 87,
       "origin": "Phthia",
-      "parents": { "father": "Peleus", "mother": "Thetis" },
-      "specialAbilities": ["Near invulnerability", "Greatest warrior"],
-      "notableMyths": ["Trojan War", "Duel with Hector"],
+      "parents": {
+        "father": "Peleus",
+        "mother": "Thetis"
+      },
+      "specialAbilities": [
+        "Near invulnerability",
+        "Greatest warrior"
+      ],
+      "notableMyths": [
+        "Trojan War",
+        "Duel with Hector"
+      ],
       "fate": "Killed by Paris with an arrow to the heel.",
       "storyTitle": "The Wrath of Achilles",
       "storyPart1": "Achilles was the greatest of all Greek warriors, but his life was defined by a prophecy: he could live a long, quiet life of obscurity, or a short, glorious life that would never be forgotten. He chose glory. When the Trojan War began, he led his Myrmidons with terrifying efficiency, becoming the Greeks' greatest weapon against the high walls of Troy. However, his pride was as great as his skill. After a bitter feud with King Agamemnon over a captive woman named Briseis, Achilles withdrew from battle in a fit of rage.",
@@ -14,11 +25,22 @@
     },
     {
       "name": "heracles",
+      "startTime": 11,
+      "endTime": 60,
       "greekName": "Ἡρακλῆς",
       "origin": "Thebes",
-      "parents": { "father": "Zeus", "mother": "Alcmene" },
-      "specialAbilities": ["Superhuman strength", "Extreme endurance"],
-      "notableMyths": ["The Twelve Labors", "Cerberus"],
+      "parents": {
+        "father": "Zeus",
+        "mother": "Alcmene"
+      },
+      "specialAbilities": [
+        "Superhuman strength",
+        "Extreme endurance"
+      ],
+      "notableMyths": [
+        "The Twelve Labors",
+        "Cerberus"
+      ],
       "fate": "Ascended to Olympus and became immortal.",
       "storyTitle": "The Twelve Labors",
       "storyPart1": "Heracles was born the son of Zeus, but his life was a constant struggle against the vengeful goddess Hera. In a fit of madness induced by Hera, Heracles committed a terrible crime against his own family. To purify his soul, he was commanded by the Oracle of Delphi to serve his cousin, King Eurystheus, who feared Heracles' strength and sought to destroy him by assigning him twelve 'impossible' labors.",
@@ -26,11 +48,22 @@
     },
     {
       "name": "perseus",
+      "startTime": 31,
+      "endTime": 78,
       "greekName": "Περσεύς",
       "origin": "Argos",
-      "parents": { "father": "Zeus", "mother": "Danaë" },
-      "specialAbilities": ["Divine weaponry", "Bravery"],
-      "notableMyths": ["Slaying Medusa", "Saving Andromeda"],
+      "parents": {
+        "father": "Zeus",
+        "mother": "Danaë"
+      },
+      "specialAbilities": [
+        "Divine weaponry",
+        "Bravery"
+      ],
+      "notableMyths": [
+        "Slaying Medusa",
+        "Saving Andromeda"
+      ],
       "fate": "Founded Mycenae and ruled as king.",
       "storyTitle": "The Gorgon's Head",
       "storyPart1": "Perseus was sent on a deadly mission by King Polydectes: he was to fetch the head of Medusa, a Gorgon whose gaze turned men to stone. Knowing no mortal could do this alone, the gods aided him. Hermes gave him winged sandals, and Athena provided a polished bronze shield. He used the shield's reflection to look at Medusa safely, decapitating her while she slept and tucking the head into a magical bag.",
@@ -38,11 +71,22 @@
     },
     {
       "name": "orpheus",
+      "startTime": 150.5,
+      "endTime": 210,
       "greekName": "Ὀρφεύς",
       "origin": "Thrace",
-      "parents": { "father": "Apollo", "mother": "Calliope" },
-      "specialAbilities": ["Divine musicianship", "Animal charming"],
-      "notableMyths": ["Underworld Journey", "Argonaut Expedition"],
+      "parents": {
+        "father": "Apollo",
+        "mother": "Calliope"
+      },
+      "specialAbilities": [
+        "Divine musicianship",
+        "Animal charming"
+      ],
+      "notableMyths": [
+        "Underworld Journey",
+        "Argonaut Expedition"
+      ],
       "fate": "Torn apart by Maenads after a life of mourning.",
       "storyTitle": "The Song of the Underworld",
       "storyPart1": "Orpheus was the greatest musician to ever live; his music could move stones and soothe the most savage beasts. When his wife, Eurydice, died from a snake bite on their wedding day, Orpheus was so heartbroken that he did what no living mortal dared: he descended into the Underworld. Using his lyre, he charmed the ferryman Charon and the three-headed dog Cerberus, eventually reaching the throne of Hades and Persephone.",
@@ -50,11 +94,22 @@
     },
     {
       "name": "theseus",
+      "startTime": 11,
+      "endTime": 42,
       "greekName": "Θησεύς",
       "origin": "Athens",
-      "parents": { "father": "Aegeus", "mother": "Aethra" },
-      "specialAbilities": ["Strategic thinking", "Wrestling"],
-      "notableMyths": ["The Minotaur", "The Labyrinth"],
+      "parents": {
+        "father": "Aegeus",
+        "mother": "Aethra"
+      },
+      "specialAbilities": [
+        "Strategic thinking",
+        "Wrestling"
+      ],
+      "notableMyths": [
+        "The Minotaur",
+        "The Labyrinth"
+      ],
       "fate": "Died in exile after falling from a cliff.",
       "storyTitle": "The Minotaur and the Labyrinth",
       "storyPart1": "Theseus traveled to Athens to claim his birthright as the son of King Aegeus. Along the way, he cleared the road of six legendary bandits, proving his strength. When he reached Athens, he discovered the city was forced to send fourteen youths every nine years to be devoured by the Minotaur in Crete. Determined to end this cruelty, Theseus volunteered as one of the victims, vowing to slay the beast.",
@@ -62,11 +117,22 @@
     },
     {
       "name": "atalanta",
+      "startTime": 29,
+      "endTime": 63,
       "greekName": "Ἀταλάντη",
       "origin": "Arcadia",
-      "parents": { "father": "Iasus", "mother": "Clymene" },
-      "specialAbilities": ["Incredible speed", "Archery"],
-      "notableMyths": ["Calydonian Boar Hunt", "The Golden Apples"],
+      "parents": {
+        "father": "Iasus",
+        "mother": "Clymene"
+      },
+      "specialAbilities": [
+        "Incredible speed",
+        "Archery"
+      ],
+      "notableMyths": [
+        "Calydonian Boar Hunt",
+        "The Golden Apples"
+      ],
       "fate": "Transformed into a lion by the gods.",
       "storyTitle": "The Great Huntress",
       "storyPart1": "Abandoned on a mountainside as a baby, Atalanta was raised by a she-bear and later discovered by hunters. She grew into a fierce warrior and the swiftest runner in Greece. She famously drew first blood during the Calydonian Boar Hunt, earning the respect of many heroes. When her father finally recognized her, he insisted she marry, but she declared she would only wed the man who could beat her in a footrace.",
@@ -74,11 +140,22 @@
     },
     {
       "name": "odysseus",
+      "startTime": 111,
+      "endTime": 153,
       "greekName": "Ὀδυσσεύς",
       "origin": "Ithaca",
-      "parents": { "father": "Laertes", "mother": "Anticleia" },
-      "specialAbilities": ["Master tactician", "Expert archer"],
-      "notableMyths": ["The Trojan Horse", "The Cyclops"],
+      "parents": {
+        "father": "Laertes",
+        "mother": "Anticleia"
+      },
+      "specialAbilities": [
+        "Master tactician",
+        "Expert archer"
+      ],
+      "notableMyths": [
+        "The Trojan Horse",
+        "The Cyclops"
+      ],
       "fate": "Returned home and reclaimed his kingdom.",
       "storyTitle": "The Long Journey Home",
       "storyPart1": "Odysseus was not the strongest hero, but he was undoubtedly the cleverest. During the ten-year siege of Troy, it was his 'Trojan Horse' strategy that finally broke the stalemate and led to the city's fall. But his true trial began after the war ended. His journey home to Ithaca, which should have taken weeks, lasted ten grueling years as he faced the wrath of Poseidon and the temptations of the sea.",
@@ -86,11 +163,22 @@
     },
     {
       "name": "jason",
+      "startTime": 5,
+      "endTime": 72,
       "greekName": "Ἰάσων",
       "origin": "Iolcus",
-      "parents": { "father": "Aeson", "mother": "Alcimede" },
-      "specialAbilities": ["Charismatic leadership", "Expert sailor"],
-      "notableMyths": ["The Argonauts", "The Golden Fleece"],
+      "parents": {
+        "father": "Aeson",
+        "mother": "Alcimede"
+      },
+      "specialAbilities": [
+        "Charismatic leadership",
+        "Expert sailor"
+      ],
+      "notableMyths": [
+        "The Argonauts",
+        "The Golden Fleece"
+      ],
       "fate": "Died in old age when the prow of the Argo fell on him.",
       "storyTitle": "The Quest for the Golden Fleece",
       "storyPart1": "Jason was sent on a mission by his uncle Pelias to retrieve the Golden Fleece from the distant land of Colchis. He assembled the 'Argonauts,' a crew of Greece’s greatest heroes, and built the magical ship Argo. Their voyage was filled with peril, from clashing rocks to terrifying Harpies. When they finally reached Colchis, King Aeëtes set even more impossible tasks for Jason before he would hand over the fleece.",
@@ -98,11 +186,22 @@
     },
     {
       "name": "hector",
+      "startTime": 169,
+      "endTime": 213,
       "greekName": "Ἕκτωρ",
       "origin": "Troy",
-      "parents": { "father": "Priam", "mother": "Hecuba" },
-      "specialAbilities": ["Unrivaled courage", "Master of the spear"],
-      "notableMyths": ["The Siege of Troy", "Death of Patroclus"],
+      "parents": {
+        "father": "Priam",
+        "mother": "Hecuba"
+      },
+      "specialAbilities": [
+        "Unrivaled courage",
+        "Master of the spear"
+      ],
+      "notableMyths": [
+        "The Siege of Troy",
+        "Death of Patroclus"
+      ],
       "fate": "Slain by Achilles outside the gates of Troy.",
       "storyTitle": "The Tamer of Horses",
       "storyPart1": "Hector was the crown prince of Troy and its greatest defender. Unlike many heroes who fought for personal glory, Hector fought for his family and his city. For ten years, he held back the entire Greek army, often challenging their best warriors to single combat. He was a noble leader who treated his enemies with respect, but he knew that as long as Achilles was on the battlefield, the fate of Troy was uncertain.",
@@ -110,11 +209,22 @@
     },
     {
       "name": "bellerophon",
+      "startTime": 83,
+      "endTime": 120,
       "greekName": "Βελλεροφῶν",
       "origin": "Corinth",
-      "parents": { "father": "Poseidon", "mother": "Eurynome" },
-      "specialAbilities": ["Pegasus taming", "Monster slaying"],
-      "notableMyths": ["The Chimera", "Taming Pegasus"],
+      "parents": {
+        "father": "Poseidon",
+        "mother": "Eurynome"
+      },
+      "specialAbilities": [
+        "Pegasus taming",
+        "Monster slaying"
+      ],
+      "notableMyths": [
+        "The Chimera",
+        "Taming Pegasus"
+      ],
       "fate": "Fell from the sky and lived his life in blindness.",
       "storyTitle": "The Rider of the Skies",
       "storyPart1": "Bellerophon’s greatest achievement was taming the winged horse, Pegasus. With the help of a golden bridle given to him by Athena, he captured the wild stallion at a sacred spring. Together, they were unstoppable. King Iobates sent him to kill the Chimera—a monstrous creature with the heads of a lion and a goat, and a snake for a tail. Bellerophon flew high above its reach and killed it with a lead-tipped spear.",
