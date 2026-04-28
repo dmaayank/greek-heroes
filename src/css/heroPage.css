@@ -366,111 +366,103 @@ button:disabled {
 }
 
 @media (max-width: 768px) {
+.hero-page-container {
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* Remove height: 100vh if you want the page to scroll naturally */
+        min-height: 100vh; 
+        box-sizing: border-box;
+    }
 
-  .hero-page-container {
-    padding: 20px 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 100vh;
+  /* 1. Fix the Audio Button at the top */
+  .audio-control-btn {
+    font-family: "greekFreak";
+    padding: 8px 15px;
+    background-color: #987A58;
+    color: #FFECCF;
+    border: 2px solid #574026;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 1rem;
+    width: auto; /* Changed from 5vw so text fits */
+    min-width: 80px;
+    position: relative;
+    top: 10px; /* Adjusted so it's not cut off */
+    z-index: 10;
   }
 
+  .hero-title {
+    font-size: 1.8rem;
+    text-align: center;
+    margin: 20px 0 10px 0; /* Space between audio button and title */
+  }
 
-  /* Stack image and text */
   .hero-details {
     flex-direction: column; 
     align-items: center;
-    gap: 15px;
+    gap: 10px;
     width: 100%;
-    margin-top: 0;
+    flex-grow: 1; /* Helps fill the screen */
   }
 
-  /* Make the image look like a card header */
   .hero-detail-image {
-    width: 80%;
-    max-width: 200px;
+    width: 60%; /* Slightly smaller to save space for text */
+    max-width: 180px;
     height: auto;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.3);
   }
 
-  /* The text container now acts like the "Card" body */
+  /* 2. The Card Body */
   .hero-text-content {
-    width: 90vw; /* Takes up most of the screen width */
-    height: 35vh;
-    min-height: 300px; /* Prevents jumping */
-    padding: 20px;
-    background: rgba(255, 255, 255, 0.1); /* Optional: slight background to define the "card" area */
+    width: 90%; 
+    height: 40vh; /* Increased height for better readability */
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.1); 
     border-radius: 15px;
-  }
-
-    .hero-text-content P{
-        font-size: 1.4rem;
-    }
-
-
-  .hero-title {
-    font-size: 1.5rem;
-    text-align: center;
-    margin-top: 3vh;
-  }
-
-  /* Navigation buttons - larger for thumbs */
-  .nav-controls {
-    margin-top: auto;
-    padding-top: 20px;
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+  }
+
+  .hero-text-content P {
+    font-size: 1.1rem; /* Slightly smaller for better fit */
+    line-height: 1.4;
+  }
+
+  /* 3. Navigation Controls (Arrows) */
+  .nav-controls {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     width: 100%;
   }
 
   .button {
-    width: 60px;
-    height: 45px;
-    font-size: 1.2rem;
+    width: 50px;
+    height: 40px;
+    font-size: 1.1rem;
   }
 
-  .audio-control-btn {
-    font-family: "greekFreak";
-    padding: 10px 20px;
-    background-color: #987A58;
-    color: #FFECCF;
-    border: 2px solid #574026;
-    cursor: pointer;
-    margin-bottom: 20px;
-    border-radius: 10px;
-    font-size: 1rem;
-    width: 5vw;
-    position: relative;
-    top: 3vh;
-}
-
+  /* 4. The Return Button at the very bottom */
 .return-button {
-    font-family: "greekFreak";
-    padding: 10px 20px;
-    background-color: #987A58;
-    color: #FFECCF;
-    border: 2px solid #574026;
-    cursor: pointer;
-    width: 30vw;
-    font-size: 1.5rem;
-    margin-bottom: 20px;
-    border-radius: 10px;
-    position: absolute;
-    position: absolute;
-    bottom: 2vh;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 2;
-}
-
-.story-scroll-area {
+    order: 4; /* Sits naturally at the very bottom */
+    position: relative; /* Changed from absolute */
+    bottom: auto;
+    left: auto;
+    transform: none;
+    margin: 30px 0 10px 0; /* Add space above and below */
+    width: 80%;
+    max-width: 250px;
+    padding: 12px;
+    font-size: 1.2rem;
+  }
+  .story-scroll-area {
     flex-grow: 1;
-    /* Takes up all space except what buttons need */
     overflow-y: auto;
-    /* Adds a scrollbar if the story is too long for the box */
-    padding-right: 10px;
-}
-
-  
+    padding-right: 5px;
+  }
 }
