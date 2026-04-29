@@ -4,7 +4,7 @@
     align-items: center;
     justify-content: flex-start;
     /* change this */
-    min-height: 100vh;
+    min-height: fit-content;
     /* better than 80vh */
     padding: 40px;
 }
@@ -148,7 +148,6 @@
     justify-content: center;
     gap: 60px;
     width: 100%;
-    margin-top: 40px;
     /* Give space below the title instead of using top offsets */
 }
 
@@ -198,14 +197,6 @@
 button:disabled {
     opacity: 0.3;
     cursor: not-allowed;
-}
-
-.hero-details {
-    display: flex;
-    gap: 40px;
-    align-items: flex-start;
-    justify-content: center;
-    margin-top: 30px;
 }
 
 .hero-text-content {
@@ -365,104 +356,190 @@ button:disabled {
     background: #574026;
 }
 
+
+@media (min-width: 768px) and (max-width: 1110px) {
+    .audio-control-btn {
+        font-family: "greekFreak";
+        padding: 8px 15px;
+        background-color: #987A58;
+        color: #FFECCF;
+        border: 2px solid #574026;
+        cursor: pointer;
+        border-radius: 10px;
+        font-size: 1rem;
+        width: auto;
+        /* Changed from 5vw so text fits */
+        min-width: 80px;
+        position: relative;
+        top: 10px;
+        /* Adjusted so it's not cut off */
+        z-index: 10;
+    }
+
+    .return-button {
+        order: 4;
+        /* Sits naturally at the very bottom */
+        position: relative;
+        /* Changed from absolute */
+        bottom: auto;
+        left: auto;
+        transform: none;
+        margin: 30px 0 10px 0;
+        /* Add space above and below */
+        width: 80%;
+        max-width: 250px;
+        padding: 12px;
+        font-size: 1.2rem;
+    }
+}
+
+
+
 @media (max-width: 768px) {
-.hero-page-container {
+    .hero-page-container {
         padding: 10px;
         display: flex;
         flex-direction: column;
         align-items: center;
         /* Remove height: 100vh if you want the page to scroll naturally */
-        min-height: 100vh; 
+        min-height: 100vh;
         box-sizing: border-box;
     }
 
-  /* 1. Fix the Audio Button at the top */
-  .audio-control-btn {
-    font-family: "greekFreak";
-    padding: 8px 15px;
-    background-color: #987A58;
-    color: #FFECCF;
-    border: 2px solid #574026;
-    cursor: pointer;
-    border-radius: 10px;
-    font-size: 1rem;
-    width: auto; /* Changed from 5vw so text fits */
-    min-width: 80px;
-    position: relative;
-    top: 10px; /* Adjusted so it's not cut off */
-    z-index: 10;
-  }
+    /* 1. Fix the Audio Button at the top */
+    .audio-control-btn {
+        font-family: "greekFreak";
+        padding: 8px 15px;
+        background-color: #987A58;
+        color: #FFECCF;
+        border: 2px solid #574026;
+        cursor: pointer;
+        border-radius: 10px;
+        font-size: 1rem;
+        width: auto;
+        /* Changed from 5vw so text fits */
+        min-width: 80px;
+        position: relative;
+        top: 10px;
+        /* Adjusted so it's not cut off */
+        z-index: 10;
+    }
 
-  .hero-title {
-    font-size: 1.8rem;
-    text-align: center;
-    margin: 20px 0 10px 0; /* Space between audio button and title */
-  }
+    .hero-title {
+        font-size: 1.8rem;
+        text-align: center;
+        margin: 50px 0 10px 0;
+        /* Space between audio button and title */
+    }
 
-  .hero-details {
-    flex-direction: column; 
-    align-items: center;
-    gap: 10px;
-    width: 100%;
-    flex-grow: 1; /* Helps fill the screen */
-  }
+    .hero-details {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        width: 100%;
+        padding: 0px 10px;
+        flex-grow: 1;
+        /* Helps fill the screen */
+    }
 
-  .hero-detail-image {
-    width: 60%; /* Slightly smaller to save space for text */
-    max-width: 180px;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-  }
+    .hero-detail-image {
+        width: 60%;
+        /* Slightly smaller to save space for text */
+        max-width: 180px;
+        height: auto;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    }
 
-  /* 2. The Card Body */
-  .hero-text-content {
-    width: 90%; 
-    height: 40vh; /* Increased height for better readability */
-    padding: 15px;
-    background: rgba(255, 255, 255, 0.1); 
-    border-radius: 15px;
+    /* 2. The Card Body */
+    .hero-text-content {
+        width: 90%;
+        height: 40vh;
+        /* Increased height for better readability */
+        padding: 15px;
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .hero-text-content P {
+        font-size: 1.1rem;
+        /* Slightly smaller for better fit */
+        line-height: 1.4;
+    }
+
+    /* 3. Navigation Controls (Arrows) */
+    .nav-controls {
+        margin-top: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+
+    .button {
+        width: 50px;
+        height: 40px;
+        font-size: 1.1rem;
+    }
+
+    /* 4. The Return Button at the very bottom */
+    .return-button {
+        order: 4;
+        /* Sits naturally at the very bottom */
+        position: relative;
+        /* Changed from absolute */
+        bottom: 5vh;
+        left: auto;
+        transform: none;
+        margin: 30px 0 10px 0;
+        /* Add space above and below */
+        width: 80%;
+        max-width: 250px;
+        padding: 12px;
+        font-size: 1.2rem;
+    }
+
+    .story-scroll-area {
+        flex-grow: 1;
+        overflow-y: auto;
+        padding-right: 5px;
+    }
+}
+
+@media (max-width: 767px) {
+    .hero-page-container {
+        position: fixed;
+    }
+}
+
+.start-screen {
     display: flex;
     flex-direction: column;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-  }
-
-  .hero-text-content P {
-    font-size: 1.1rem; /* Slightly smaller for better fit */
-    line-height: 1.4;
-  }
-
-  /* 3. Navigation Controls (Arrows) */
-  .nav-controls {
-    margin-top: 10px;
-    display: flex;
+    align-items: center;
+    /* This pushes the header-group to the top and action-group to the bottom */
     justify-content: space-between;
+    height: 100vh;
+    padding: 40px 20px;
+    /* Adjust padding to keep buttons away from screen edge */
+    box-sizing: border-box;
+}
+
+.header-group,
+.action-group {
+    display: flex;
+    flex-direction: column;
     align-items: center;
     width: 100%;
-  }
-
-  .button {
-    width: 50px;
-    height: 40px;
-    font-size: 1.1rem;
-  }
-
-  /* 4. The Return Button at the very bottom */
-.return-button {
-    order: 4; /* Sits naturally at the very bottom */
-    position: relative; /* Changed from absolute */
-    bottom: auto;
-    left: auto;
-    transform: none;
-    margin: 30px 0 10px 0; /* Add space above and below */
-    width: 80%;
-    max-width: 250px;
-    padding: 12px;
-    font-size: 1.2rem;
-  }
-  .story-scroll-area {
-    flex-grow: 1;
-    overflow-y: auto;
-    padding-right: 5px;
-  }
 }
+
+.mode-selection-area {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    max-width: 280px;
+}
+
