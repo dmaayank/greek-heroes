@@ -494,7 +494,7 @@ button:disabled {
         bottom: 5vh;
         left: auto;
         transform: none;
-        margin: 30px 0 10px 0;
+        margin: 50px 0 10px 0;
         /* Add space above and below */
         width: 80%;
         max-width: 250px;
@@ -509,6 +509,20 @@ button:disabled {
     }
 
     
+}
+
+@media (max-width: 768px) {
+  /* Target the element that has the overflow-y: auto */
+  .app-container {
+    /* 1. Hide for Chrome, Safari, and newer versions of Edge */
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* Internet Explorer 10+ */
+  }
+
+  /* 2. Hide for Chrome, Safari and Opera */
+  .app-container::-webkit-scrollbar {
+    display: none;
+  }
 }
 
 .start-screen {
