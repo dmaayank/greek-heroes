@@ -240,6 +240,50 @@ p {
     margin-bottom: 20px;
     position: static;
   }
+
+  @media (max-width: 768px) {
+  /* 1. Target the Intro Section wrapper */
+  .intro-section {
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important; /* Centers the whole group vertically */
+    align-items: center !important;     /* Centers the whole group horizontally */
+    height: 100vh !important;
+    padding: 20px !important;
+    text-align: center !important;
+  }
+
+  /* 2. Fix the "Welcome" Title */
+  .intro-section h1 {
+    position: static !important; /* Removes the top: 20vh trap */
+    font-size: 2.2rem !important; /* Smaller so it fits the screen width */
+    margin-bottom: 15px !important;
+    transform: none !important;
+    width: 90% !important;
+  }
+
+  /* 3. Fix the "In here you will learn..." Paragraph */
+  .intro-section p {
+    position: static !important;
+    font-size: 1.1rem !important;
+    line-height: 1.5 !important;
+    margin: 0 auto 30px auto !important;
+    width: 85% !important;
+    max-width: 320px;
+  }
+
+  /* 4. Fix the "ENTER" Button */
+  .intro-section .start {
+    position: static !important;
+    margin-top: 10px !important;
+    font-size: 1.5rem !important;
+    padding: 10px 40px !important;
+    width: auto !important;
+    cursor: pointer;
+  }
+}
+
+  
 }
 
 /* ===== TABLET / SMALL LAPTOP (Width 769px to 1100px) ===== */
@@ -320,5 +364,17 @@ p {
     /* Centers cards horizontally in their 'box' */
     align-items: center !important;
     /* Centers cards vertically in their 'box' */
+  }
+}
+
+@media (max-width: 1024px) and (min-width: 769px){
+  .intro-section {
+    position: relative;
+    top: 30vh;
+  }
+
+  .start {
+    position: relative;
+    top: 10vh;
   }
 }
