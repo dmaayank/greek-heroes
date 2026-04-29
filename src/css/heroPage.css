@@ -507,12 +507,8 @@ button:disabled {
         overflow-y: auto;
         padding-right: 5px;
     }
-}
 
-@media (max-width: 767px) {
-    .hero-page-container {
-        position: fixed;
-    }
+    
 }
 
 .start-screen {
