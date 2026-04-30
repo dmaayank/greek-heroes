@@ -42,7 +42,7 @@ const App = () => {
       {!isCards && (
         <div className="intro-section">
           <h1>Welcome to the Lomda!</h1>
-          <p>in here you will learn about all the different greek heroes, who they were, and their achievement! at the end, there will be a quiz, so make sure to pay attention!</p>
+          <p>in here you will learn about all the different greek heroes, who they were, and their achievements! at the end, there will be a quiz, so make sure to pay attention!</p>
           <button className="start" onClick={() => setIsCards(true)}>
             ENTER
           </button>
