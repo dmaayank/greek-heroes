@@ -53,9 +53,7 @@ const HeroPage = ({ hero, onBack }) => {
 
     return (
         <div className="hero-page-container">
-            {step === 2 && (
                 <button className="return-button" onClick={onBack}>BACK TO HEROES</button>
-            )}
 
             <button className="audio-control-btn" onClick={toggleMute}>
                 {isMuted ? "🔈 Unmute" : "🔊 Mute"}
